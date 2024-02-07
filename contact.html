@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <title>Contact</title>
+</head>
+<body>
+
+    <header>
+        <h1>Contact</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">CV</a>
+        <a href="#">Servicii</a>
+        <a href="contact.html">Contact</a>
+        <div id="dark-mode-toggle">
+            <img src="./poze/sun.png" alt="Light Mode Icon" id="light-mode-icon">
+            <img src="./poze/moon.png" alt="Dark Mode Icon" id="dark-mode-icon">
+        </div>
+    </nav>
+    <center>
+        <br><br><br>
+        <div class="form-style-6">
+            <h1>Contact Us</h1>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Your Name" required/>
+                <input type="email" id="email" name="email" required placeholder="Email Address" required/>
+                <textarea name="message" id="message" placeholder="Type your Message " required style="height: 150px; resize: none;" maxlength="1000"></textarea>
+                <input type="button" value="Send"  onclick="sendEmail()" />
+            </form>
+        </div>
+
+    </center>
+
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript" src="./javascr/dark-mode.js"></script>
+    <script type="text/javascript" src="./javascr/mail.js"></script>
+
+</body>
+</html>
+
+
