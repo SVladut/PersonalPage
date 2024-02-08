@@ -10,7 +10,9 @@
 <body>
 
     <header>
-        <h1>Contact</h1>
+        <div class="content">
+             <h2>Contact</h2>
+        </div>
     </header>
 
     <nav>
@@ -23,19 +25,19 @@
             <img src="./poze/moon.png" alt="Dark Mode Icon" id="dark-mode-icon">
         </div>
     </nav>
-    <center>
-        <br><br><br>
-        <div class="form-style-6">
-            <h1>Contact Us</h1>
-            <form>
-                <input type="text" id="name" name="name" placeholder="Your Name" required/>
-                <input type="email" id="email" name="email" required placeholder="Email Address" required/>
-                <textarea name="message" id="message" placeholder="Type your Message " required style="height: 150px; resize: none;" maxlength="1000"></textarea>
-                <input type="button" value="Send"  onclick="sendEmail()" />
-            </form>
-        </div>
+<center>
+    <br><br><br>
+    <div class="form-style-6">
+        <h1>Contact Form</h1>
+        <form onsubmit="return sendEmail();">
+            <input type="text" id="name" name="name" placeholder="Your Name" required/>
+            <input type="email" id="email" name="email"  placeholder="Email Address" required/>
+            <textarea name="message" id="message" placeholder="Type your Message "  style="height: 150px; resize: none;" maxlength="1000" required></textarea>
+            <input type="submit" value="Send" />
+        </form>
+    </div>
+</center>
 
-    </center>
 
 
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
